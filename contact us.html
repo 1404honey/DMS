@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Contact Us|TechShala VP</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact form</title>
+    <link rel="stylesheet" href="contact.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <script src="https://cdn.tailwindcss.com"></script> 
+
+    <style>
+      nav a {
+  cursor: pointer;
+  color: #4a5568;
+  text-decoration: none;
+  transition: color 0.3s ease, background-color 0.3s ease;
+  padding: 10px 15px;
+  border-radius: 5px;
+}
+
+/* Hover effect */
+nav a:hover {
+  color: #48bb78; /* Changes the text color on hover */
+
+}
+    </style>
+</head>
+<body style="margin-top: 90px;">
+  <header class="text-gray-600 body-font glass-effect" style="position: fixed; top: 0; width: 100%; z-index: 1000; background-color: rgba(255, 255, 255, 0.1); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); border-bottom: 1px solid rgba(255, 255, 255, 0.3);">
+    <div style="max-width: 1200px; margin: 0 auto; padding: 10px; display: flex; flex-wrap: wrap; flex-direction: row; align-items: center;">
+      <a href="index.html" style="display: flex; align-items: center; color: #1a202c; margin-bottom: 8px; text-decoration: none;">
+        <img src="Assets/techlogo-removebg-preview.png" style="width: 80px; height: 80px;" alt="Tech Logo">
+        <span style="margin-left: 12px; font-size: 1.25rem; font-weight: 500;"></span>
+      </a>
+      <nav style="margin-left: auto; display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 15px;">
+        <a href="index.html" style="cursor: pointer;  text-decoration: none; transition: color 0.2s ease;">HOME</a>
+        <a href="about us.html" style="cursor: pointer;text-decoration: none; transition: color 0.2s ease;">ABOUT US</a>
+        <a href="events.html" style="cursor: pointer;text-decoration: none; transition: color 0.2s ease;">EVENTS</a>
+        <a href="contact us.html" style="cursor: pointer;text-decoration: none; transition: color 0.2s ease;">CONTACT US</a>
+        <a href="login/signup.html" style="cursor: pointer;text-decoration: none; transition: color 0.2s ease;">SIGN UP</a>
+      </nav>
+    </div>
+  </header> <hr>   
+    <div class="contact-container">
+        <form action="https://api.web3forms.com/submit" method="POST" class="contact-left">
+         <div class="contact-left-title">
+            <h2>Contact Us</h2>
+            <hr>
+         </div> 
+         <input type="hidden" name="access_key" value="dc37d04a-db6c-47b8-92a0-165424deead5">
+         <input type="text" name="name" placeholder="Your Name" class="contact-inputs" required> 
+         <input type="email" name="email" placeholder="Your Email" class="contact-inputs" required>
+         <textarea name="message" placeholder="Your Message" class="contact-inputs" required></textarea>
+         <button type="submit">Submit</button>     
+    </form>
+    <div class="contact-right">
+        <img src="Assets/bg.jpg" alt="">
+    </div>
+    </div>
+    
+    <footer class="text-gray-600 body-font">
+      <div class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
+        <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
+          <img src="Assets/techshala logo.jpg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1" class="w-10 h-10 text-white p-2 bg-green-500 rounded-full" viewBox="0 0 24 24">
+            <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+            <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+          </svg>
+          <span class="ml-3 text-xl">TechShala</span>
+        </a>
+        <p class="text-sm text-gray-500 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4">© 2023 Techshala —
+          <a href="instagram.com/vp_techshala" class="text-gray-600 ml-1" rel="noopener noreferrer" target="_blank"></a>
+        </p>
+        <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
+          <a class="ml-3 text-gray-500" href="https://www.instagram.com/vp_techshala?igsh=MWtmZGhieTRic2RlaQ==" target="_blank">
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+              <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+              <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+            </svg>
+          </a>
+          <a class="ml-3 text-gray-500" href="https://www.linkedin.com/company/techshala-vpt/" target="_blank">
+            <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
+              <path stroke="none" d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
+              <circle cx="4" cy="4" r="2" stroke="none"></circle>
+            </svg>
+          </a>
+        </span>
+      </div>
+    </footer>
+</body>
+</html>
